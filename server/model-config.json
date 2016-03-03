@@ -35,5 +35,9 @@
   "book": {
     "dataSource": "db",
     "public": true
+  },
+  "google": {
+    "dataSource": null,
+    "public": true
   }
 }

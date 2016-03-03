@@ -1,0 +1,14 @@
+{
+  "name": "google",
+  "base": "Model",
+  "plural": "google",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {},
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

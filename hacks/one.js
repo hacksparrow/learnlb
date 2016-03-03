@@ -1,13 +1,12 @@
 var DataSource = require('loopback-datasource-juggler').DataSource;
-var ModelBuilder = require('loopback-datasource-juggler').ModelBuilder;
 
-var fsDs = new DataSource({
+var ds = new DataSource({
   connector: require('./ramdb.js'),
   host: 'localhost',
   db: 'mydb'
 });
 
-var User = fsDs.define('User', {
+var User = ds.define('User', {
   name: String,
   bio: String,
   dob: Date
@@ -30,4 +29,3 @@ uB.save()
 User.all(function (err, data) {
   console.log(data)
 })
-
